@@ -1,7 +1,6 @@
 # ── Python 编译产物 ──
 __pycache__/
 *.py[cod]
-*.pyo
 *.egg-info/
 dist/
 build/
@@ -68,3 +67,31 @@ temp/
 
 # ── 不推送的本地文档 ──
 doc/不备份文档/
+
+# ── 日志文件 ──
+*.log
+
+# ── 备份 & 合并残留 ──
+*.bak
+*.backup
+*.orig
+
+# ── 压缩归档 ──
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+
+# ── Python wheel ──
+*.whl
+
+# ── NumPy 缓存 ──
+*.npy
+*.npz
+
+# ── Wandb ──
+wandb/
+
+# ── pyenv ──
+.python-version
