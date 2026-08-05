@@ -1,0 +1,29 @@
+[run]
+source = .
+omit =
+    tests/*
+    check_env.py
+    test.py
+    test_*.py
+    */__pycache__/*
+    */site-packages/*
+    config/*
+    models/model_configs/*
+    scripts/*
+    vendor/*
+
+[report]
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    raise NotImplementedError
+    if 0:
+    if __name__ == .__main__.:
+
+# Core modules to track (>60% target)
+#   utils/format_converter.py
+#   data/data_loader.py
+#   data/augmentation.py
+#   eval/evaluator.py
+#   inference/predictor.py
+#   utils/nms_utils.py

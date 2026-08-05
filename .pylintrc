@@ -1,0 +1,18 @@
+[MAIN]
+# Disable warnings that are intentional design choices or false positives
+disable=
+    # Design: optional dependency imports (ONNX, TensorRT, SAHI, PIL are loaded on demand)
+    C0415,
+    # Design: function signatures match I-0X interface specs from design doc
+    R0913,R0914,R0912,R0915,R0902,
+    # False positive: dynamic modules (torch, cv2, tensorrt) not understood by pylint
+    E1101,
+    # Design: mAP50/mAP50_95/per_class_AP match field names in EvalResult dataclass
+    C0103,
+    # Minor: dict() is fine, parenthes around not-for-readability
+    R1735,C0325,
+    # Missing docstrings on module-level (__init__.py files are minimal re-exports)
+    C0114,
+
+[BASIC]
+good-names=mAP50,mAP50_95,per_class_AP,per_class_P,per_class_R,size_stratified_mAP

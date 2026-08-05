@@ -1,0 +1,70 @@
+# ── Python 编译产物 ──
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# ── 虚拟环境 ──
+venv/
+.venv/
+env/
+
+# ── IDE / 编辑器 ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── 测试 & 覆盖率 ──
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.coverage.*
+
+# ── 数据集（1.9 GB，原始数据太大，由用户自行准备）──
+datasets/
+
+# ── 训练输出（1.4 GB，含 checkpoints / TensorBoard / 日志）──
+runs/
+
+# ── 预训练权重（可从官方下载 yolov8n.pt）──
+yolov8n.pt
+*.pt
+
+# ── Jupyter ──
+.ipynb_checkpoints/
+
+# ── OS 杂项 ──
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ── 环境变量（如有）──
+.env
+.env.local
+
+# ── Docker ──
+docker-compose.override.yml
+
+# ── 第三方 vendor（如 TensorRT wheel 等二进制文件）──
+vendor/
+
+# ── 模型导出产物 ──
+*.onnx
+*.trt
+*.engine
+*.torchscript
+
+# ── 临时文件 ──
+tmp/
+temp/
+*.tmp
+
+# ── 不推送的本地文档 ──
+doc/不备份文档/

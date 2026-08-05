@@ -1,0 +1,15 @@
+[flake8]
+max-line-length = 120
+exclude =
+    __pycache__,.git,*.egg-info,*.pyc,build,dist,runs,datasets,vendor,scripts,doc,
+    # Entry scripts: CUDA_MODULE_LOADING must be set before imports
+    train.py,predict.py,evaluate.py,export.py,check_env.py,
+    # Temporary / helper scripts (not library code)
+    benchmark_3way.py,run_benchmark.py,export_trt.py,test_trt.py,test_visualizer.py,test.py,
+    # All test files
+    tests/
+per-file-ignores =
+    # __init__.py files re-export APIs — F401 is intentional
+    */__init__.py: F401
+    # inference_benchmark has justified late imports for optional deps
+    export/inference_benchmark.py: E402

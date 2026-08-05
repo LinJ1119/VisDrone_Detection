@@ -1,0 +1,37 @@
+# ====== Core Framework (locked) ======
+# PyTorch must be installed from official source:
+# pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 -f https://download.pytorch.org/whl/torch_stable.html
+# torch==1.12.1+cu113   # already installed via wheel
+# torchvision==0.13.1+cu113  # already installed via wheel
+
+# ====== Detection Engine (locked) ======
+ultralytics==8.1.0
+
+# ====== Numeric & Image Processing ======
+#numpy==1.24.4   #numpy>=1.22.2 
+opencv-python-headless==4.6.0.66
+Pillow==9.5.0
+
+# ====== Visualization & Logging ======
+matplotlib==3.5.3
+tensorboard==2.11.2
+tqdm==4.64.1
+
+# ====== Config Management ======
+pyyaml==6.0
+
+# ====== Model Export (Should) ======
+onnx==1.13.1
+onnxruntime-gpu==1.13.1
+
+# ====== SAHI Sliced Inference (Should) ======
+sahi==0.11.15
+# If shapely fails on Windows:
+# conda install -c conda-forge shapely
+
+# ====== TensorRT (Should, download wheel from NVIDIA) ======
+# tensorrt==8.5.3.1  # match CUDA 11.3 wheel
+
+# ====== Test Framework ======
+pytest==7.2.2
+pytest-cov==4.0.0

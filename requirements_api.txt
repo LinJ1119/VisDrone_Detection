@@ -1,0 +1,9 @@
+# VisDrone 推理服务最小依赖
+# torch 由本地 wheel 安装, torchvision 在 Dockerfile 单独安装, 不在此文件
+ultralytics==8.1.0
+numpy>=1.21,<1.25
+opencv-python-headless==4.6.0.66
+Pillow>=9.0
+fastapi>=0.95
+uvicorn>=0.20
+python-multipart>=0.0.5
